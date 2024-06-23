@@ -38,7 +38,7 @@ let sampleUserInfoViewModel = UserInfo(
     temperature: "36.5",
     userGoodsList: [sampleGoodsInfo1, sampleGoodsInfo2, sampleGoodsInfo3, sampleGoodsInfo4])
 
-let sampleGoodsInfos = [sampleGoodsInfo1, sampleGoodsInfo2]
+let sampleGoodsInfos = [sampleGoodsInfo1, sampleGoodsInfo2, sampleGoodsInfo3, sampleGoodsInfo4]
 
 let sampleGoodsInfo1 = GoodsInfo(
     id: "1",
