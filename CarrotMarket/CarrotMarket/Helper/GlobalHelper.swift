@@ -36,7 +36,7 @@ let sampleUserInfoViewModel = UserInfo(
     name: "감성탐방러",
     region: "중랑구 면목동",
     temperature: "36.5",
-    userGoodsList: [sampleGoodsInfo1, sampleGoodsInfo2, sampleGoodsInfo3, sampleGoodsInfo4])
+    userGoodsList: [sampleGoodsInfo1, sampleGoodsInfo2])
 
 let sampleGoodsInfos = [sampleGoodsInfo1, sampleGoodsInfo2, sampleGoodsInfo3, sampleGoodsInfo4]
 
