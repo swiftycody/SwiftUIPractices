@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E3B85312C2630B7003A5E88 /* CarrotMarketApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3B85302C2630B7003A5E88 /* CarrotMarketApp.swift */; };
+		0E3B85332C2630B7003A5E88 /* GoodsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3B85322C2630B7003A5E88 /* GoodsDetailView.swift */; };
+		0E3B85352C2630B8003A5E88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E3B85342C2630B8003A5E88 /* Assets.xcassets */; };
+		0E3B85382C2630B8003A5E88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E3B85372C2630B8003A5E88 /* Preview Assets.xcassets */; };
+		0E3B85402C263CF7003A5E88 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 0E3B853F2C263CF7003A5E88 /* Kingfisher */; };
+		0E3B85422C264055003A5E88 /* GlobalHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3B85412C264055003A5E88 /* GlobalHelper.swift */; };
+		0E3B85442C266F7A003A5E88 /* PagingImageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3B85432C266F7A003A5E88 /* PagingImageScrollView.swift */; };
+		0E3B85492C267DE8003A5E88 /* Text+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3B85482C267DE8003A5E88 /* Text+extension.swift */; };
+		0E3B854B2C267E9F003A5E88 /* Color+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3B854A2C267E9F003A5E88 /* Color+extension.swift */; };
+		0E3B854D2C2681FA003A5E88 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3B854C2C2681FA003A5E88 /* UserInfoView.swift */; };
+		0E3B85502C27A581003A5E88 /* GoodsInfoBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3B854F2C27A581003A5E88 /* GoodsInfoBodyView.swift */; };
+		0E3B85542C27BBCB003A5E88 /* FixedSpacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3B85532C27BBCB003A5E88 /* FixedSpacer.swift */; };
+		0E3B85562C27D5D4003A5E88 /* GoodsGridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3B85552C27D5D4003A5E88 /* GoodsGridItem.swift */; };
+		0E3B85582C27EC3F003A5E88 /* GoodsDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3B85572C27EC3F003A5E88 /* GoodsDetailViewModel.swift */; };
+		0E3B855F2C27F2DD003A5E88 /* GoodsDetailBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3B855E2C27F2DD003A5E88 /* GoodsDetailBottomView.swift */; };
+		0E3B85612C27FCF0003A5E88 /* GoodsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3B85602C27FCF0003A5E88 /* GoodsGridView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0E3B852D2C2630B7003A5E88 /* CarrotMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarrotMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E3B85302C2630B7003A5E88 /* CarrotMarketApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrotMarketApp.swift; sourceTree = "<group>"; };
+		0E3B85322C2630B7003A5E88 /* GoodsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsDetailView.swift; sourceTree = "<group>"; };
+		0E3B85342C2630B8003A5E88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0E3B85372C2630B8003A5E88 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0E3B85412C264055003A5E88 /* GlobalHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelper.swift; sourceTree = "<group>"; };
+		0E3B85432C266F7A003A5E88 /* PagingImageScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingImageScrollView.swift; sourceTree = "<group>"; };
+		0E3B85482C267DE8003A5E88 /* Text+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+extension.swift"; sourceTree = "<group>"; };
+		0E3B854A2C267E9F003A5E88 /* Color+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+extension.swift"; sourceTree = "<group>"; };
+		0E3B854C2C2681FA003A5E88 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
+		0E3B854F2C27A581003A5E88 /* GoodsInfoBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsInfoBodyView.swift; sourceTree = "<group>"; };
+		0E3B85532C27BBCB003A5E88 /* FixedSpacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedSpacer.swift; sourceTree = "<group>"; };
+		0E3B85552C27D5D4003A5E88 /* GoodsGridItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsGridItem.swift; sourceTree = "<group>"; };
+		0E3B85572C27EC3F003A5E88 /* GoodsDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsDetailViewModel.swift; sourceTree = "<group>"; };
+		0E3B855E2C27F2DD003A5E88 /* GoodsDetailBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsDetailBottomView.swift; sourceTree = "<group>"; };
+		0E3B85602C27FCF0003A5E88 /* GoodsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsGridView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E3B852A2C2630B7003A5E88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E3B85402C263CF7003A5E88 /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E3B85242C2630B7003A5E88 = {
+			isa = PBXGroup;
+			children = (
+				0E3B852F2C2630B7003A5E88 /* CarrotMarket */,
+				0E3B852E2C2630B7003A5E88 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0E3B852E2C2630B7003A5E88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E3B852D2C2630B7003A5E88 /* CarrotMarket.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0E3B852F2C2630B7003A5E88 /* CarrotMarket */ = {
+			isa = PBXGroup;
+			children = (
+				0E3B85302C2630B7003A5E88 /* CarrotMarketApp.swift */,
+				0E3B854E2C279F93003A5E88 /* GoodsDetail */,
+				0E3B85472C267DAE003A5E88 /* DesignSystem */,
+				0E3B85452C267D88003A5E88 /* Components */,
+				0E3B85462C267D9C003A5E88 /* Helper */,
+				0E3B85342C2630B8003A5E88 /* Assets.xcassets */,
+				0E3B85362C2630B8003A5E88 /* Preview Content */,
+			);
+			path = CarrotMarket;
+			sourceTree = "<group>";
+		};
+		0E3B85362C2630B8003A5E88 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0E3B85372C2630B8003A5E88 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0E3B85452C267D88003A5E88 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0E3B85432C266F7A003A5E88 /* PagingImageScrollView.swift */,
+				0E3B85532C27BBCB003A5E88 /* FixedSpacer.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0E3B85462C267D9C003A5E88 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				0E3B85412C264055003A5E88 /* GlobalHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		0E3B85472C267DAE003A5E88 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				0E3B85482C267DE8003A5E88 /* Text+extension.swift */,
+				0E3B854A2C267E9F003A5E88 /* Color+extension.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		0E3B854E2C279F93003A5E88 /* GoodsDetail */ = {
+			isa = PBXGroup;
+			children = (
+				0E3B85322C2630B7003A5E88 /* GoodsDetailView.swift */,
+				0E3B85572C27EC3F003A5E88 /* GoodsDetailViewModel.swift */,
+				0E3B85592C27EC5E003A5E88 /* SubViews */,
+			);
+			path = GoodsDetail;
+			sourceTree = "<group>";
+		};
+		0E3B85592C27EC5E003A5E88 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				0E3B854C2C2681FA003A5E88 /* UserInfoView.swift */,
+				0E3B854F2C27A581003A5E88 /* GoodsInfoBodyView.swift */,
+				0E3B85602C27FCF0003A5E88 /* GoodsGridView.swift */,
+				0E3B85552C27D5D4003A5E88 /* GoodsGridItem.swift */,
+				0E3B855E2C27F2DD003A5E88 /* GoodsDetailBottomView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0E3B852C2C2630B7003A5E88 /* CarrotMarket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E3B853B2C2630B8003A5E88 /* Build configuration list for PBXNativeTarget "CarrotMarket" */;
+			buildPhases = (
+				0E3B85292C2630B7003A5E88 /* Sources */,
+				0E3B852A2C2630B7003A5E88 /* Frameworks */,
+				0E3B852B2C2630B7003A5E88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarrotMarket;
+			packageProductDependencies = (
+				0E3B853F2C263CF7003A5E88 /* Kingfisher */,
+			);
+			productName = CarrotMarket;
+			productReference = 0E3B852D2C2630B7003A5E88 /* CarrotMarket.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0E3B85252C2630B7003A5E88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					0E3B852C2C2630B7003A5E88 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 0E3B85282C2630B7003A5E88 /* Build configuration list for PBXProject "CarrotMarket" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0E3B85242C2630B7003A5E88;
+			packageReferences = (
+				0E3B853E2C263CF7003A5E88 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = 0E3B852E2C2630B7003A5E88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0E3B852C2C2630B7003A5E88 /* CarrotMarket */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0E3B852B2C2630B7003A5E88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E3B85382C2630B8003A5E88 /* Preview Assets.xcassets in Resources */,
+				0E3B85352C2630B8003A5E88 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E3B85292C2630B7003A5E88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E3B85492C267DE8003A5E88 /* Text+extension.swift in Sources */,
+				0E3B854B2C267E9F003A5E88 /* Color+extension.swift in Sources */,
+				0E3B85612C27FCF0003A5E88 /* GoodsGridView.swift in Sources */,
+				0E3B854D2C2681FA003A5E88 /* UserInfoView.swift in Sources */,
+				0E3B85582C27EC3F003A5E88 /* GoodsDetailViewModel.swift in Sources */,
+				0E3B85422C264055003A5E88 /* GlobalHelper.swift in Sources */,
+				0E3B85442C266F7A003A5E88 /* PagingImageScrollView.swift in Sources */,
+				0E3B85562C27D5D4003A5E88 /* GoodsGridItem.swift in Sources */,
+				0E3B85332C2630B7003A5E88 /* GoodsDetailView.swift in Sources */,
+				0E3B85502C27A581003A5E88 /* GoodsInfoBodyView.swift in Sources */,
+				0E3B855F2C27F2DD003A5E88 /* GoodsDetailBottomView.swift in Sources */,
+				0E3B85542C27BBCB003A5E88 /* FixedSpacer.swift in Sources */,
+				0E3B85312C2630B7003A5E88 /* CarrotMarketApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0E3B85392C2630B8003A5E88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0E3B853A2C2630B8003A5E88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0E3B853C2C2630B8003A5E88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CarrotMarket/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wes.CarrotMarket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0E3B853D2C2630B8003A5E88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CarrotMarket/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wes.CarrotMarket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E3B85282C2630B7003A5E88 /* Build configuration list for PBXProject "CarrotMarket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E3B85392C2630B8003A5E88 /* Debug */,
+				0E3B853A2C2630B8003A5E88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E3B853B2C2630B8003A5E88 /* Build configuration list for PBXNativeTarget "CarrotMarket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E3B853C2C2630B8003A5E88 /* Debug */,
+				0E3B853D2C2630B8003A5E88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0E3B853E2C263CF7003A5E88 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0E3B853F2C263CF7003A5E88 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E3B853E2C263CF7003A5E88 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0E3B85252C2630B7003A5E88 /* Project object */;
+}
