@@ -6,17 +6,17 @@
 //
 
 import SwiftUI
-import Kingfisher
 
 struct UserInfoView: View {
     let name: String
+    let imageResource: ImageResource
     let region: String
     let temperature: String
     
     var body: some View {
         HStack {
             // 사용자 정보
-            KFImage(URL(string: ImageUrl.user1))
+            Image(imageResource)
                 .resizable()
                 .frame(width: 40, height: 40)
                 .clipShape(Circle())
@@ -51,6 +51,7 @@ struct UserInfoView: View {
 #Preview {
     UserInfoView(
         name: "감성탐방러",
+        imageResource: .user1,
         region: "중랑구 면목동",
         temperature: "36.5")
 }

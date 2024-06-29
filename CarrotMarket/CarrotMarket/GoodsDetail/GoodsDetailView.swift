@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Kingfisher
 
 let sampleViewModel = GoodsDetailViewModel(
     userInfo: sampleUserInfoViewModel,
@@ -19,12 +18,13 @@ struct GoodsDetailView: View {
     var body: some View {
         ScrollView([.vertical]) {
             VStack {
-                PagingImageScrollView(imageUrls: viewModel.goodsInfo.imageUrls)
+                PagingImageScrollView(imageResources: viewModel.goodsInfo.imageResources)
                     .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.width)
                 
                 FixedSpacer(16)
                 
-                UserInfoView(name: viewModel.userInfo.name,
+                UserInfoView(name: viewModel.userInfo.name, 
+                             imageResource: viewModel.userInfo.imageResource,
                              region: viewModel.userInfo.region,
                              temperature: viewModel.userInfo.temperature)
                     .padding(.horizontal)

@@ -18,8 +18,8 @@ struct GoodsGridView: View {
     var body: some View {
         LazyVGrid(columns: gridItems, spacing: 16) {
             ForEach(goodsItems) { goods in
-                if let firstImageUrl = goods.imageUrls.first {
-                    GoodsGridItem(imageUrl: firstImageUrl,
+                if let firstImageResource = goods.imageResources.first {
+                    GoodsGridItem(imageResource: firstImageResource,
                                   title: goods.title,
                                   price: goods.price)
                 }

@@ -6,15 +6,14 @@
 //
 
 import SwiftUI
-import Kingfisher
 
 struct GoodsGridItem: View {
-    let imageUrl: String
+    let imageResource: ImageResource
     let title: String
     let price: String
     var body: some View {
         VStack(alignment: .leading) {
-            KFImage(URL(string: imageUrl))
+            Image(imageResource)
                 .resizable()
                 .aspectRatio((171/118), contentMode: .fit)
                 .clipShape(RoundedRectangle(cornerSize: .init(width: 4, height: 4)))
@@ -27,5 +26,5 @@ struct GoodsGridItem: View {
 }
 
 #Preview {
-    GoodsGridItem(imageUrl: ImageUrl.airpodPro, title: "에어팟 미개봉 팝니다.", price: "240,000원")
+    GoodsGridItem(imageResource: .airpodPro, title: "에어팟 미개봉 팝니다.", price: "240,000원")
 }

@@ -6,15 +6,14 @@
 //
 
 import SwiftUI
-import Kingfisher
 
 struct PagingImageScrollView: View {
-    let imageUrls: [String]
+    let imageResources: [ImageResource]
     
     var body: some View {
         TabView {
-            ForEach(imageUrls, id: \.self) { imageUrl in
-                KFImage(URL(string: imageUrl))
+            ForEach(imageResources, id: \.self) { imageResource in
+                Image(imageResource)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .clipped()
@@ -27,5 +26,5 @@ struct PagingImageScrollView: View {
 }
 
 #Preview {
-    PagingImageScrollView(imageUrls: imageUrls)
+    PagingImageScrollView(imageResources: imageResources)
 }
