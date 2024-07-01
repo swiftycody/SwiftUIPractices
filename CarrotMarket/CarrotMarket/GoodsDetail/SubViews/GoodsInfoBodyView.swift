@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct GoodsInfoBodyView: View {
+    @Environment(\.colorScheme) var colorScheme
+    
     let title: String
     let category: String
     let price: String
@@ -20,7 +22,7 @@ struct GoodsInfoBodyView: View {
         HStack {
             VStack(alignment: .leading) {
                 Text(title)
-                    .textStyle(style: .B18)
+                    .textStyle(style: .B18, color: .titleColor(forScheme: colorScheme))
                 
                 FixedSpacer(8)
                 
@@ -37,6 +39,7 @@ struct GoodsInfoBodyView: View {
                 FixedSpacer(16)
                 
                 Text(description)
+                    .textStyle(style: .R14, color: .titleColor(forScheme: colorScheme))
                 
                 FixedSpacer(16)
                 

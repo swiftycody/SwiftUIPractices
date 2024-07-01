@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct NavigationBar: View {
+    @Environment(\.colorScheme) var colorScheme
+    
     let leftItems: [NavigationItem]
     let rightItems: [NavigationItem]
     let background: Color
@@ -111,7 +113,7 @@ struct NavigationItemView: View {
             Button(action: action, label: {
                 HStack(spacing: 6) {
                     Text("\(title)")
-                        .textStyle(style: .B18)
+                        .textStyle(style: .B18, color: colorTheme)
                     Image(systemName: "chevron.down")
                         .frame(width: 24, height: 24)
                         .foregroundStyle(colorTheme)

@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct GoodsListView: View {
+    @Environment(\.colorScheme) var colorScheme
+    
     var body: some View {
         NavigationView {
             ScrollView(showsIndicators: false) {
@@ -29,6 +31,7 @@ struct GoodsListView: View {
                                 )
                                 FixedSpacer(16)
                                 Divider()
+                                    .background(Color.hexEEEEEE)
                             }
                         }
                     }
@@ -39,8 +42,10 @@ struct GoodsListView: View {
                            rightItems: [.search(action: { }),
                                         .menu(action: { }),
                                         .notification(action: { })],
-                           background: .white)
+                           background: .backgroundColor(forScheme: colorScheme),
+                           colorTheme: .titleColor(forScheme: colorScheme))
         }
+        .background(Color.backgroundColor(forScheme: colorScheme))
     }
 }
 

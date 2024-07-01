@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct GoodsDetailView: View {
+    @Environment(\.colorScheme) var colorScheme
     @ObservedObject var viewModel: GoodsDetailViewModel
     
     var body: some View {
@@ -26,6 +27,7 @@ struct GoodsDetailView: View {
                     .padding(.horizontal)
                     
                     Divider()
+                        .background(Color.hexEEEEEE)
                         .padding(16)
                     
                     GoodsInfoBodyView(
@@ -40,30 +42,32 @@ struct GoodsDetailView: View {
                     .padding(.horizontal)
                     
                     Divider()
+                        .background(Color.hexEEEEEE)
                         .padding(16)
                     
                     Button {
                         // 눌렀을 때 action
                     } label: {
                         Text("이 게시글 신고하기")
-                            .textStyle(style: .B14)
+                            .textStyle(style: .B14, color: .titleColor(forScheme: colorScheme))
                         Spacer()
                         Image(systemName: "chevron.right")
-                            .foregroundStyle(Color.hex000000)
+                            .foregroundStyle(Color.titleColor(forScheme: colorScheme))
                     }
                     .padding(.horizontal)
                     
                     Divider()
+                        .background(Color.hexEEEEEE)
                         .padding(16)
                     
                     Button {
                         // 눌렀을 때 action
                     } label: {
                         Text("\(viewModel.userInfo.name)님의 판매 상품")
-                            .textStyle(style: .B14)
+                            .textStyle(style: .B14, color: .titleColor(forScheme: colorScheme))
                         Spacer()
                         Image(systemName: "chevron.right")
-                            .foregroundStyle(Color.hex000000)
+                            .foregroundStyle(Color.titleColor(forScheme: colorScheme))
                     }
                     .padding(.horizontal)
                     
@@ -73,11 +77,12 @@ struct GoodsDetailView: View {
                         .padding(.horizontal)
                     
                     Divider()
+                        .background(Color.hexEEEEEE)
                         .padding(16)
                     
                     HStack {
                         Text("이 글과 함께 봤어요")
-                            .textStyle(style: .B14)
+                            .textStyle(style: .B14, color: .titleColor(forScheme: colorScheme))
                         Spacer()
                     }
                     .padding(.horizontal)
@@ -93,6 +98,7 @@ struct GoodsDetailView: View {
             .ignoresSafeArea(edges: .top)
             
             Divider()
+                .background(Color.hexEEEEEE)
             
             GoodsDetailBottomView(favorite: $viewModel.favorite,
                                   price: viewModel.goodsInfo.price,

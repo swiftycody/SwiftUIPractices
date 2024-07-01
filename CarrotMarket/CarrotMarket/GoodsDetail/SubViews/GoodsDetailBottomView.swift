@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct GoodsDetailBottomView: View {
+    @Environment(\.colorScheme) var colorScheme
     @Binding var favorite: Bool
     let price: String
     let isSuggestionPossible: Bool
@@ -22,9 +23,11 @@ struct GoodsDetailBottomView: View {
                     .foregroundStyle(favorite ? .pink : Color.hex8C8C8C)
             }
             Divider()
+                .background(Color.hexEEEEEE)
+            
             VStack(alignment: .leading) {
                 Text(price)
-                    .textStyle(style: .B14)
+                    .textStyle(style: .B14, color: .titleColor(forScheme: colorScheme))
                 Text(isSuggestionPossible ? "가격 제안 가능" : "가격 제안 불가")
                     .textStyle(style: .B12, color: .hex8C8C8C)
             }

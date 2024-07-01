@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct UserInfoView: View {
+    @Environment(\.colorScheme) var colorScheme
     let name: String
     let imageResource: ImageResource
     let region: String
@@ -22,7 +23,7 @@ struct UserInfoView: View {
                 .clipShape(Circle())
             VStack(alignment: .leading, spacing: 4) {
                 Text(name)
-                    .textStyle(style: .B18, color: .hex000000)
+                    .textStyle(style: .B18, color: .titleColor(forScheme: colorScheme))
                 Text(region)
                     .textStyle(style: .R12, color: .hex4F4F4F)
             }

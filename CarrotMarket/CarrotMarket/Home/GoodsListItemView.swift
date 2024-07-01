@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct GoodsListItemView: View {
+    @Environment(\.colorScheme) var colorScheme
+    
     let imageResource: ImageResource
     let goodsName: String
     let region: String
@@ -29,8 +31,8 @@ struct GoodsListItemView: View {
             VStack(alignment: .leading) {
                 VStack(alignment: .leading) {
                     Text(goodsName)
-                        .textStyle(style: .R16)
-                    HStack {
+                        .textStyle(style: .R16, color: .titleColor(forScheme: colorScheme))
+                    HStack(spacing: 4) {
                         Text(region)
                             .textStyle(style: .R12, color: .hex8C8C8C)
                         Text("·")

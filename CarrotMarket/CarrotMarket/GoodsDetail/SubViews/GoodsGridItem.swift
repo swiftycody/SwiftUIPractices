@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct GoodsGridItem: View {
+    @Environment(\.colorScheme) var colorScheme
     let imageResource: ImageResource
     let title: String
     let price: String
@@ -18,9 +19,9 @@ struct GoodsGridItem: View {
                 .aspectRatio((171/118), contentMode: .fit)
                 .clipShape(RoundedRectangle(cornerSize: .init(width: 4, height: 4)))
             Text(title)
-                .textStyle(style: .R14)
+                .textStyle(style: .R14, color: .titleColor(forScheme: colorScheme))
             Text(price)
-                .textStyle(style: .B14)
+                .textStyle(style: .B14, color: .titleColor(forScheme: colorScheme))
         }
     }
 }
