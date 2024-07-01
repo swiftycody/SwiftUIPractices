@@ -11,7 +11,8 @@ import SwiftUI
 struct CarrotMarketApp: App {
     var body: some Scene {
         WindowGroup {
-            GoodsDetailView(viewModel: sampleViewModel)
+            GoodsListView()
+//            GoodsDetailView(viewModel: sampleGoodsDetailViewModel)
         }
     }
 }

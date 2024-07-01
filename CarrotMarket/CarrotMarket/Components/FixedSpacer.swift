@@ -11,7 +11,7 @@ import SwiftUI
 struct FixedSpacer: View {
     let size: CGFloat
     
-    init(_ size: CGFloat) {
+    init(_ size: CGFloat = 16) {
         self.size = size
     }
     

@@ -7,7 +7,8 @@
 
 import Foundation
 
-class GoodsDetailViewModel: ObservableObject {
+class GoodsDetailViewModel: ObservableObject, Identifiable {
+    var id: String { UUID().uuidString }
     let userInfo: UserInfo
     let goodsInfo: GoodsInfo
     @Published var favorite: Bool
@@ -29,7 +30,7 @@ struct UserInfo {
 
 class GoodsInfo: ObservableObject, Identifiable {
     let id: String
-    @Published var imageResources: [ImageResource]
+    let imageResources: [ImageResource]
     let title: String
     let category: String
     let price: String
@@ -38,8 +39,9 @@ class GoodsInfo: ObservableObject, Identifiable {
     let body: String
     let interestingCount: Int
     let viewCount: Int
+    let region: String
     
-    init(id: String, imageResources: [ImageResource], title: String, category: String, price: String, isSuggestionPossible: Bool, pullUp: String, body: String, interestingCount: Int, viewCount: Int) {
+    init(id: String, imageResources: [ImageResource], title: String, category: String, price: String, isSuggestionPossible: Bool, pullUp: String, body: String, interestingCount: Int, viewCount: Int, region: String) {
         self.id = id
         self.imageResources = imageResources
         self.title = title
@@ -50,5 +52,6 @@ class GoodsInfo: ObservableObject, Identifiable {
         self.body = body
         self.interestingCount = interestingCount
         self.viewCount = viewCount
+        self.region = region
     }
 }
