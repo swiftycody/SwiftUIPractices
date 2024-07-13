@@ -183,12 +183,12 @@ struct NavigationBarModifier: ViewModifier {
                 .toolbar {
                     ToolbarItemGroup(placement: .navigationBarLeading) {
                         ForEach(leftItems) { item in
-                            NavigationItemView(navigationItem: item)
+                            NavigationItemView(navigationItem: item, colorTheme: colorTheme)
                         }
                     }
                     ToolbarItemGroup(placement: .navigationBarTrailing) {
                         ForEach(rightItems) { item in
-                            NavigationItemView(navigationItem: item)
+                            NavigationItemView(navigationItem: item, colorTheme: colorTheme)
                         }
                     }
                 }
@@ -197,19 +197,19 @@ struct NavigationBarModifier: ViewModifier {
                 VStack(spacing: 0) {
                     Divider()
                     content
-                        .navigationBarBackButtonHidden()
-                        .toolbar {
-                            ToolbarItemGroup(placement: .navigationBarLeading) {
-                                ForEach(leftItems) { item in
-                                    NavigationItemView(navigationItem: item)
-                                }
-                            }
-                            ToolbarItemGroup(placement: .navigationBarTrailing) {
-                                ForEach(rightItems) { item in
-                                    NavigationItemView(navigationItem: item)
-                                }
-                            }
+                }
+                .navigationBarBackButtonHidden()
+                .toolbar {
+                    ToolbarItemGroup(placement: .navigationBarLeading) {
+                        ForEach(leftItems) { item in
+                            NavigationItemView(navigationItem: item)
                         }
+                    }
+                    ToolbarItemGroup(placement: .navigationBarTrailing) {
+                        ForEach(rightItems) { item in
+                            NavigationItemView(navigationItem: item)
+                        }
+                    }
                 }
             }
         }
