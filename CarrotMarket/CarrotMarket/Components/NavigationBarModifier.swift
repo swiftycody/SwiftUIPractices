@@ -162,7 +162,7 @@ struct NavigationBarModifier: ViewModifier {
     let rightItems: [NavigationItem]
     let background: Color
     let colorTheme: Color
-
+    
     init(isOnZStack: Bool,
          leftItems: [NavigationItem],
          rightItems: [NavigationItem],
@@ -174,36 +174,45 @@ struct NavigationBarModifier: ViewModifier {
         self.background = background
         self.colorTheme = colorTheme
     }
-
+    
     func body(content: Content) -> some View {
         if isOnZStack {
-            ZStack {
-                if isOnZStack {
-                    content
+            content
+                .ignoresSafeArea(edges: .top)
+                .navigationBarBackButtonHidden()
+                .toolbar {
+                    ToolbarItemGroup(placement: .navigationBarLeading) {
+                        ForEach(leftItems) { item in
+                            NavigationItemView(navigationItem: item)
+                        }
+                    }
+                    ToolbarItemGroup(placement: .navigationBarTrailing) {
+                        ForEach(rightItems) { item in
+                            NavigationItemView(navigationItem: item)
+                        }
+                    }
                 }
-                VStack {
-                    NavigationBar(leftItems: leftItems, rightItems: rightItems, background: background, colorTheme: colorTheme)
-
-                    Spacer()
-                }
-            }
-            .navigationBarHidden(true)
         } else {
-            VStack(spacing: 0) {
-                NavigationBar(leftItems: leftItems, rightItems: rightItems, background: background, colorTheme: colorTheme)
-                Divider()
-
-                content
+            NavigationView {
+                VStack(spacing: 0) {
+                    Divider()
+                    content
+                        .navigationBarBackButtonHidden()
+                        .toolbar {
+                            ToolbarItemGroup(placement: .navigationBarLeading) {
+                                ForEach(leftItems) { item in
+                                    NavigationItemView(navigationItem: item)
+                                }
+                            }
+                            ToolbarItemGroup(placement: .navigationBarTrailing) {
+                                ForEach(rightItems) { item in
+                                    NavigationItemView(navigationItem: item)
+                                }
+                            }
+                        }
+                }
             }
-            .navigationBarHidden(true)
         }
     }
 }
 
-//#Preview {
-//    NavigationBar(
-//        leftItems: [.region(title: "군자동", action: { })],
-//        rightItems: [.search(action: { }),
-//                     .menu(action: { }),
-//                     .notification(action: { })])
-//}

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct GoodsDetailView: View {
     @Environment(\.colorScheme) var colorScheme
+    @Environment(\.presentationMode) var presentationMode
     @ObservedObject var viewModel: GoodsDetailViewModel
     
     var body: some View {
@@ -95,7 +96,6 @@ struct GoodsDetailView: View {
                     FixedSpacer(20)
                 }
             }
-            .ignoresSafeArea(edges: .top)
             
             Divider()
                 .background(Color.hexEEEEEE)
@@ -109,12 +109,11 @@ struct GoodsDetailView: View {
         }
         .navigationBar(isOnZStack: true,
                        leftItems: [.back,
-                                   .home(action: { /* action */ })],
-                       rightItems: [.share(action: { /* action */ }),
-                                    .goodsDetailMenu(action: { /* action */ })],
+                                   .home(action: { })],
+                       rightItems: [.share(action: { }),
+                                    .goodsDetailMenu(action: { })],
                        background: .clear,
                        colorTheme: .white)
-        
     }
 }
 
