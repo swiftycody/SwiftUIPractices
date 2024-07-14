@@ -109,14 +109,6 @@ struct GoodsDetailView: View {
             .padding(.vertical, 8)
             .frame(height: 54)
         }
-        .bottomSheet(isShowing: $isShowing) {
-            Text("""
-                Some Bottom Sheet View.
-                Some Bottom Sheet View.
-                Some Bottom Sheet View.
-                Some Bottom Sheet View.
-            """)
-        }
         .navigationBar(isOnZStack: true,
                        leftItems: [.back,
                                    .home(action: { })],
@@ -124,6 +116,11 @@ struct GoodsDetailView: View {
                                     .goodsDetailMenu(action: { })],
                        background: .clear,
                        colorTheme: .white)
+        .bottomSheet(isShowing: $isShowing) {
+//            Text("매우 긴 텍스트 매우 긴 텍스트 매우 긴 텍스트 매우 긴 텍스트 매우 긴 텍스트 매우 긴 텍스트 매우 긴 텍스트 매우 긴 텍스트 매우 긴 텍스트 매우 긴 텍스트 매우 긴 텍스트 매우 긴 텍스트 매우 긴 텍스트 매우 긴 텍스트 매우 긴 텍스트 매우 긴 텍스트 매우 긴 텍스트 ")
+//                .padding()
+            ShareToFriendsView(friendsList: sampleFriends, isShowing: $isShowing)
+        }
     }
 }
 

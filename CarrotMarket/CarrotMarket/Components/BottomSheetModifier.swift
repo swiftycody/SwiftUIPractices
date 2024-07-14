@@ -24,13 +24,11 @@ struct BottomSheetModifier<SheetContent: View>: ViewModifier {
     
     func body(content: Content) -> some View {
         ZStack {
-            ScrollView {
-                content
-            }
+            content
             
             if isShowing {
                 // BottomSheet의 배경
-                Color.black.opacity(0.3)
+                Color.black.opacity(0.1)
                     .ignoresSafeArea()
                     .onTapGesture {
                         withAnimation {
@@ -43,7 +41,6 @@ struct BottomSheetModifier<SheetContent: View>: ViewModifier {
             // BottomSheet
             VStack {
                 Spacer()
-                
                 VStack(spacing: 0) {
                     Rectangle() // BottomSheet의 핸들
                         .frame(width: 50, height: 4)
@@ -53,8 +50,8 @@ struct BottomSheetModifier<SheetContent: View>: ViewModifier {
                             DragGesture()
                                 .onChanged { value in
                                     // NOTE:  DragGesture는 아래방향이 +, 윗방향이 -로 height값이 됨
-                                    if value.translation.height > 0 {
-                                        dragOffset = value.translation.height
+                                    if dragOffset + value.translation.height > 0 {
+                                        dragOffset = dragOffset + value.translation.height
                                     }
                                 }
                                 .onEnded { value in
@@ -83,6 +80,7 @@ struct BottomSheetModifier<SheetContent: View>: ViewModifier {
                 .cornerRadius(20, corners: [.topLeft, .topRight])
                 .offset(y: offset + dragOffset)
                 .animation(.easeInOut(duration: 0.25), value: isShowing)
+                .shadow(radius: 10)
             }
             .ignoresSafeArea(edges: .bottom)
         }
