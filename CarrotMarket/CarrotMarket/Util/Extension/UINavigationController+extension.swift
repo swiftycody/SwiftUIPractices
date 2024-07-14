@@ -7,6 +7,7 @@
 
 import UIKit
 
+// For SwipeBack Gesture
 extension UINavigationController {
     open override func viewDidLoad() {
         super.viewDidLoad()

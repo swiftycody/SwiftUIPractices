@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct GoodsGridView: View {
-    // NOTE: Grid의 ForEach에 넣을 데이터는 @State로 넣어야 함?
     let goodsItems: [GoodsInfo]
     let gridItems = [
         GridItem(.flexible(), alignment: .top),

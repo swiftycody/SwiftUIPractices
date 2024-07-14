@@ -12,6 +12,8 @@ struct GoodsDetailView: View {
     @Environment(\.presentationMode) var presentationMode
     @ObservedObject var viewModel: GoodsDetailViewModel
     
+    @State private var isShowing = false
+    
     var body: some View {
         VStack {
             ScrollView([.vertical]) {
@@ -107,10 +109,18 @@ struct GoodsDetailView: View {
             .padding(.vertical, 8)
             .frame(height: 54)
         }
+        .bottomSheet(isShowing: $isShowing) {
+            Text("""
+                Some Bottom Sheet View.
+                Some Bottom Sheet View.
+                Some Bottom Sheet View.
+                Some Bottom Sheet View.
+            """)
+        }
         .navigationBar(isOnZStack: true,
                        leftItems: [.back,
                                    .home(action: { })],
-                       rightItems: [.share(action: { }),
+                       rightItems: [.share(action: { isShowing = true }),
                                     .goodsDetailMenu(action: { })],
                        background: .clear,
                        colorTheme: .white)
