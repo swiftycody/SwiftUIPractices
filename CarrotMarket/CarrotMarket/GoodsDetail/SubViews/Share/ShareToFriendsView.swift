@@ -44,6 +44,7 @@ struct ShareToFriendsView: View {
                     }
                 }
             }
+//            .frame(maxHeight: UIScreen.main.bounds.height - 250.0)
             
             VStack {
                 Spacer()
@@ -70,7 +71,9 @@ struct ShareToFriendsView: View {
                 
             }
         }
-//        .fixedSize(horizontal: false, vertical: true)
+        .frame(maxHeight: UIScreen.main.bounds.height - 250.0)
+        .fixedSize(horizontal: false, vertical: true)
+        .background(Color.backgroundColor(forScheme: colorScheme))
         .padding()
         .ignoresSafeArea()
     }

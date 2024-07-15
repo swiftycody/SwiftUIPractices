@@ -14,6 +14,7 @@ extension View {
 }
 
 struct BottomSheetModifier<SheetContent: View>: ViewModifier {
+    @Environment(\.colorScheme) var colorScheme
     @Binding var isShowing: Bool
     let sheetContent: () -> SheetContent
     @State private var sheetHeight: CGFloat = 0
@@ -66,17 +67,16 @@ struct BottomSheetModifier<SheetContent: View>: ViewModifier {
                     
                     sheetContent() // BottomSheet의 content
                         .padding(.top)
-                        .padding(.bottom, UIApplication.shared.windows.first?.safeAreaInsets.bottom ?? 0)
                 }
                 .background( // NOTE: 크기를 알고 싶은 View의 background로 GeometryReader를 넣으면 크기를 알 수 있다
                     GeometryReader { geometry in
-                        Color.clear
+                        Color.backgroundColor(forScheme: colorScheme)
                             .onAppear {
                                 sheetHeight = geometry.size.height
                             }
                     })
-                .frame(maxWidth: .infinity)
                 .background(Color.white)
+                .frame(maxWidth: .infinity)
                 .cornerRadius(20, corners: [.topLeft, .topRight])
                 .offset(y: offset + dragOffset)
                 .animation(.easeInOut(duration: 0.25), value: isShowing)

@@ -72,6 +72,7 @@ enum NavigationItem: Identifiable, Equatable {
 
 struct NavigationItemView: View {
     @Environment(\.presentationMode) var presentationMode
+    @Environment(\.colorScheme) var colorScheme
     
     let navigationItem: NavigationItem
     let colorTheme: Color
@@ -113,29 +114,29 @@ struct NavigationItemView: View {
             Button(action: action, label: {
                 HStack(spacing: 6) {
                     Text("\(title)")
-                        .textStyle(style: .B18, color: colorTheme)
+                        .textStyle(style: .B18, color: .titleColor(forScheme: colorScheme))
                     Image(systemName: "chevron.down")
                         .frame(width: 24, height: 24)
-                        .foregroundStyle(colorTheme)
+                        .foregroundStyle(Color.titleColor(forScheme: colorScheme))
                 }
             })
         case let .search(action):
             Button(action: action, label: {
                 Image(systemName: "magnifyingglass")
                     .frame(width: 24, height: 24)
-                    .foregroundStyle(colorTheme)
+                    .foregroundStyle(Color.titleColor(forScheme: colorScheme))
             })
         case let .menu(action):
             Button(action: action, label: {
                 Image(systemName: "line.3.horizontal")
                     .frame(width: 24, height: 24)
-                    .foregroundStyle(colorTheme)
+                    .foregroundStyle(Color.titleColor(forScheme: colorScheme))
             })
         case let .notification(action):
             Button(action: action, label: {
                 Image(systemName: "bell")
                     .frame(width: 24, height: 24)
-                    .foregroundStyle(colorTheme)
+                    .foregroundStyle(Color.titleColor(forScheme: colorScheme))
             })
         }
     }
