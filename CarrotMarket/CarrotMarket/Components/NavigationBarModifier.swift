@@ -182,7 +182,7 @@ struct NavigationBarModifier: ViewModifier {
                 .ignoresSafeArea(edges: .top)
                 .navigationBarBackButtonHidden()
                 .toolbar {
-                    ToolbarItemGroup(placement: .navigationBarLeading) {
+                    ToolbarItemGroup(placement: .navigationBarLeading) { // NOTE: ToolbarItemGroup
                         ForEach(leftItems) { item in
                             NavigationItemView(navigationItem: item, colorTheme: colorTheme)
                         }

@@ -44,7 +44,6 @@ struct ShareToFriendsView: View {
                     }
                 }
             }
-//            .frame(maxHeight: UIScreen.main.bounds.height - 250.0)
             
             VStack {
                 Spacer()
@@ -72,7 +71,7 @@ struct ShareToFriendsView: View {
             }
         }
         .frame(maxHeight: UIScreen.main.bounds.height - 250.0)
-        .fixedSize(horizontal: false, vertical: true)
+        .fixedSize(horizontal: false, vertical: true) // NOTE: frame(max...)적용 후 fixedSize 적용하면 내부 컨텐츠 크기에 맞게 적용시켜줌.
         .background(Color.backgroundColor(forScheme: colorScheme))
         .padding()
         .ignoresSafeArea()

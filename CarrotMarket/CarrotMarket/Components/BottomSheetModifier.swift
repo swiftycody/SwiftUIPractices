@@ -19,7 +19,7 @@ struct BottomSheetModifier<SheetContent: View>: ViewModifier {
     let sheetContent: () -> SheetContent
     @State private var sheetHeight: CGFloat = 0
     @State private var dragOffset: CGFloat = 0
-    var offset: CGFloat {
+    var bottomSheetOffset: CGFloat {
         isShowing ? 0 : sheetHeight
     }
     
@@ -52,6 +52,7 @@ struct BottomSheetModifier<SheetContent: View>: ViewModifier {
                                 .onChanged { value in
                                     // NOTE:  DragGesture는 아래방향이 +, 윗방향이 -로 height값이 됨
                                     if dragOffset + value.translation.height > 0 {
+                                        // NOTE: 직전에 준 value로부터 얼마나 이동했는지 값을 주기 때문에, 이전 value에 새 value를 더해야 자연스럽게 움직여짐.
                                         dragOffset = dragOffset + value.translation.height
                                     }
                                 }
@@ -77,8 +78,8 @@ struct BottomSheetModifier<SheetContent: View>: ViewModifier {
                     })
                 .background(Color.white)
                 .frame(maxWidth: .infinity)
-                .cornerRadius(20, corners: [.topLeft, .topRight])
-                .offset(y: offset + dragOffset)
+                .cornerRadius(20, corners: [.topLeft, .topRight]) // NOTE: depricated가 떠서 새로 만듦
+                .offset(y: bottomSheetOffset + dragOffset)
                 .animation(.easeInOut(duration: 0.25), value: isShowing)
                 .shadow(radius: 10)
             }
