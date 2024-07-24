@@ -90,8 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				0E3B85302C2630B7003A5E88 /* CarrotMarketApp.swift */,
-				0E3B85622C2A1889003A5E88 /* Home */,
-				0E3B854E2C279F93003A5E88 /* GoodsDetail */,
+				0E3B85622C2A1889003A5E88 /* GoodsList */,
 				0E3B85452C267D88003A5E88 /* Components */,
 				0E3B85752C32CE16003A5E88 /* Util */,
 				0E3B85462C267D9C003A5E88 /* Helper */,
@@ -161,13 +160,14 @@
 			path = SubViews;
 			sourceTree = "<group>";
 		};
-		0E3B85622C2A1889003A5E88 /* Home */ = {
+		0E3B85622C2A1889003A5E88 /* GoodsList */ = {
 			isa = PBXGroup;
 			children = (
 				0E3B856F2C3201E3003A5E88 /* GoodsListView.swift */,
 				0E3B85712C320265003A5E88 /* GoodsListItemView.swift */,
+				0E3B854E2C279F93003A5E88 /* GoodsDetail */,
 			);
-			path = Home;
+			path = GoodsList;
 			sourceTree = "<group>";
 		};
 		0E3B85752C32CE16003A5E88 /* Util */ = {
