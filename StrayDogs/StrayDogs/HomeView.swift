@@ -15,7 +15,7 @@ struct HomeView: View {
                     RoundedRectangle(cornerSize: CGSize(width: 12, height: 12))
                         .frame(width: 38, height: 38)
                         .foregroundStyle(Color.white)
-                        .shadow(radius: 12)
+                        .shadow(color: .hexD3D1D8, radius: 12)
                     Image(systemName: "line.3.horizontal")
                 }
                 Spacer()
