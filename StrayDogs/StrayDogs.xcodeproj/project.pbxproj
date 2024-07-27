@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E40AFC02C4B61E800E2DD78 /* StrayDogsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E40AFBF2C4B61E800E2DD78 /* StrayDogsApp.swift */; };
+		0E40AFC22C4B61E800E2DD78 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E40AFC12C4B61E800E2DD78 /* HomeView.swift */; };
+		0E40AFC42C4B61EC00E2DD78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E40AFC32C4B61EC00E2DD78 /* Assets.xcassets */; };
+		0E40AFC72C4B61EC00E2DD78 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E40AFC62C4B61EC00E2DD78 /* Preview Assets.xcassets */; };
+		0E40AFE32C51A08100E2DD78 /* Bool+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E40AFDA2C51A08100E2DD78 /* Bool+extension.swift */; };
+		0E40AFE42C51A08100E2DD78 /* Color+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E40AFDB2C51A08100E2DD78 /* Color+extension.swift */; };
+		0E40AFE52C51A08100E2DD78 /* Text+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E40AFDC2C51A08100E2DD78 /* Text+extension.swift */; };
+		0E40AFE62C51A08100E2DD78 /* View+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E40AFDD2C51A08100E2DD78 /* View+extension.swift */; };
+		0E40AFE72C51A08100E2DD78 /* UINavigationController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E40AFE02C51A08100E2DD78 /* UINavigationController+extension.swift */; };
+		0E40AFEC2C51A6AF00E2DD78 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E40AFEB2C51A6AF00E2DD78 /* String+extension.swift */; };
+		0E40AFEF2C51A80100E2DD78 /* FixedSpacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E40AFED2C51A80100E2DD78 /* FixedSpacer.swift */; };
+		0E40AFF22C52FAF800E2DD78 /* Dog+DTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E40AFF12C52FAF800E2DD78 /* Dog+DTO.swift */; };
+		0E40AFF52C545B1300E2DD78 /* GlobalHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E40AFF42C545B1300E2DD78 /* GlobalHelper.swift */; };
+		0E40AFF72C54607E00E2DD78 /* DogCategoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E40AFF62C54607E00E2DD78 /* DogCategoryButton.swift */; };
+		0E40AFF92C54610D00E2DD78 /* DogCategoryButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E40AFF82C54610D00E2DD78 /* DogCategoryButtonModel.swift */; };
+		0E40AFFE2C5465B200E2DD78 /* DogCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E40AFFD2C5465B200E2DD78 /* DogCategoryView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0E40AFBC2C4B61E800E2DD78 /* StrayDogs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StrayDogs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E40AFBF2C4B61E800E2DD78 /* StrayDogsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrayDogsApp.swift; sourceTree = "<group>"; };
+		0E40AFC12C4B61E800E2DD78 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0E40AFC32C4B61EC00E2DD78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0E40AFC62C4B61EC00E2DD78 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0E40AFDA2C51A08100E2DD78 /* Bool+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bool+extension.swift"; sourceTree = "<group>"; };
+		0E40AFDB2C51A08100E2DD78 /* Color+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+extension.swift"; sourceTree = "<group>"; };
+		0E40AFDC2C51A08100E2DD78 /* Text+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Text+extension.swift"; sourceTree = "<group>"; };
+		0E40AFDD2C51A08100E2DD78 /* View+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+extension.swift"; sourceTree = "<group>"; };
+		0E40AFE02C51A08100E2DD78 /* UINavigationController+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+extension.swift"; sourceTree = "<group>"; };
+		0E40AFEB2C51A6AF00E2DD78 /* String+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
+		0E40AFED2C51A80100E2DD78 /* FixedSpacer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixedSpacer.swift; sourceTree = "<group>"; };
+		0E40AFF12C52FAF800E2DD78 /* Dog+DTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dog+DTO.swift"; sourceTree = "<group>"; };
+		0E40AFF42C545B1300E2DD78 /* GlobalHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelper.swift; sourceTree = "<group>"; };
+		0E40AFF62C54607E00E2DD78 /* DogCategoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCategoryButton.swift; sourceTree = "<group>"; };
+		0E40AFF82C54610D00E2DD78 /* DogCategoryButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCategoryButtonModel.swift; sourceTree = "<group>"; };
+		0E40AFFD2C5465B200E2DD78 /* DogCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCategoryView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E40AFB92C4B61E700E2DD78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E40AFB32C4B61E700E2DD78 = {
+			isa = PBXGroup;
+			children = (
+				0E40AFBE2C4B61E800E2DD78 /* StrayDogs */,
+				0E40AFBD2C4B61E800E2DD78 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0E40AFBD2C4B61E800E2DD78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E40AFBC2C4B61E800E2DD78 /* StrayDogs.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0E40AFBE2C4B61E800E2DD78 /* StrayDogs */ = {
+			isa = PBXGroup;
+			children = (
+				0E40AFBF2C4B61E800E2DD78 /* StrayDogsApp.swift */,
+				0E40AFC12C4B61E800E2DD78 /* HomeView.swift */,
+				0E40B0012C54670700E2DD78 /* DogCategoryView */,
+				0E40AFF02C52FACD00E2DD78 /* DTO */,
+				0E40AFEE2C51A80100E2DD78 /* Components */,
+				0E40AFE22C51A08100E2DD78 /* Util */,
+				0E40AFF32C545AF900E2DD78 /* Helper */,
+				0E40AFC32C4B61EC00E2DD78 /* Assets.xcassets */,
+				0E40AFC52C4B61EC00E2DD78 /* Preview Content */,
+			);
+			path = StrayDogs;
+			sourceTree = "<group>";
+		};
+		0E40AFC52C4B61EC00E2DD78 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0E40AFC62C4B61EC00E2DD78 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0E40AFDE2C51A08100E2DD78 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				0E40AFDA2C51A08100E2DD78 /* Bool+extension.swift */,
+				0E40AFDB2C51A08100E2DD78 /* Color+extension.swift */,
+				0E40AFDC2C51A08100E2DD78 /* Text+extension.swift */,
+				0E40AFDD2C51A08100E2DD78 /* View+extension.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		0E40AFE12C51A08100E2DD78 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0E40AFE02C51A08100E2DD78 /* UINavigationController+extension.swift */,
+				0E40AFEB2C51A6AF00E2DD78 /* String+extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		0E40AFE22C51A08100E2DD78 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				0E40AFDE2C51A08100E2DD78 /* DesignSystem */,
+				0E40AFE12C51A08100E2DD78 /* Extension */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		0E40AFEE2C51A80100E2DD78 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0E40AFED2C51A80100E2DD78 /* FixedSpacer.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0E40AFF02C52FACD00E2DD78 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				0E40AFF12C52FAF800E2DD78 /* Dog+DTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		0E40AFF32C545AF900E2DD78 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				0E40AFF42C545B1300E2DD78 /* GlobalHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		0E40AFFA2C54611F00E2DD78 /* DogCategoryButton */ = {
+			isa = PBXGroup;
+			children = (
+				0E40AFF62C54607E00E2DD78 /* DogCategoryButton.swift */,
+				0E40AFF82C54610D00E2DD78 /* DogCategoryButtonModel.swift */,
+			);
+			path = DogCategoryButton;
+			sourceTree = "<group>";
+		};
+		0E40B0012C54670700E2DD78 /* DogCategoryView */ = {
+			isa = PBXGroup;
+			children = (
+				0E40AFFD2C5465B200E2DD78 /* DogCategoryView.swift */,
+				0E40AFFA2C54611F00E2DD78 /* DogCategoryButton */,
+			);
+			path = DogCategoryView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0E40AFBB2C4B61E700E2DD78 /* StrayDogs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E40AFCA2C4B61EC00E2DD78 /* Build configuration list for PBXNativeTarget "StrayDogs" */;
+			buildPhases = (
+				0E40AFB82C4B61E700E2DD78 /* Sources */,
+				0E40AFB92C4B61E700E2DD78 /* Frameworks */,
+				0E40AFBA2C4B61E700E2DD78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StrayDogs;
+			productName = StrayDogs;
+			productReference = 0E40AFBC2C4B61E800E2DD78 /* StrayDogs.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0E40AFB42C4B61E700E2DD78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					0E40AFBB2C4B61E700E2DD78 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 0E40AFB72C4B61E700E2DD78 /* Build configuration list for PBXProject "StrayDogs" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0E40AFB32C4B61E700E2DD78;
+			productRefGroup = 0E40AFBD2C4B61E800E2DD78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0E40AFBB2C4B61E700E2DD78 /* StrayDogs */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0E40AFBA2C4B61E700E2DD78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E40AFC72C4B61EC00E2DD78 /* Preview Assets.xcassets in Resources */,
+				0E40AFC42C4B61EC00E2DD78 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E40AFB82C4B61E700E2DD78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E40AFEC2C51A6AF00E2DD78 /* String+extension.swift in Sources */,
+				0E40AFE52C51A08100E2DD78 /* Text+extension.swift in Sources */,
+				0E40AFF52C545B1300E2DD78 /* GlobalHelper.swift in Sources */,
+				0E40AFE72C51A08100E2DD78 /* UINavigationController+extension.swift in Sources */,
+				0E40AFE32C51A08100E2DD78 /* Bool+extension.swift in Sources */,
+				0E40AFFE2C5465B200E2DD78 /* DogCategoryView.swift in Sources */,
+				0E40AFF22C52FAF800E2DD78 /* Dog+DTO.swift in Sources */,
+				0E40AFF72C54607E00E2DD78 /* DogCategoryButton.swift in Sources */,
+				0E40AFC22C4B61E800E2DD78 /* HomeView.swift in Sources */,
+				0E40AFC02C4B61E800E2DD78 /* StrayDogsApp.swift in Sources */,
+				0E40AFF92C54610D00E2DD78 /* DogCategoryButtonModel.swift in Sources */,
+				0E40AFE62C51A08100E2DD78 /* View+extension.swift in Sources */,
+				0E40AFEF2C51A80100E2DD78 /* FixedSpacer.swift in Sources */,
+				0E40AFE42C51A08100E2DD78 /* Color+extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0E40AFC82C4B61EC00E2DD78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0E40AFC92C4B61EC00E2DD78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0E40AFCB2C4B61EC00E2DD78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"StrayDogs/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wes.StrayDogs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0E40AFCC2C4B61EC00E2DD78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"StrayDogs/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wes.StrayDogs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E40AFB72C4B61E700E2DD78 /* Build configuration list for PBXProject "StrayDogs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E40AFC82C4B61EC00E2DD78 /* Debug */,
+				0E40AFC92C4B61EC00E2DD78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E40AFCA2C4B61EC00E2DD78 /* Build configuration list for PBXNativeTarget "StrayDogs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E40AFCB2C4B61EC00E2DD78 /* Debug */,
+				0E40AFCC2C4B61EC00E2DD78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0E40AFB42C4B61E700E2DD78 /* Project object */;
+}
