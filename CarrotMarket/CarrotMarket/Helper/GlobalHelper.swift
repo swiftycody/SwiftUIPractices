@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-let imageResources: [ImageResource] = [.headphone1, .headphone2, .headphone1]
+let imageResources: [ImageResource] = [.headphone1, .headphone2]
 
 let sampleGoodsList = [sampleGoodsDetailViewModel, sampleGoodsDetailViewModel2, sampleGoodsDetailViewModel3, sampleGoodsDetailViewModel4, sampleGoodsDetailViewModel5, sampleGoodsDetailViewModel6]
 

@@ -24,6 +24,7 @@
 		0E40AFF92C54610D00E2DD78 /* DogCategoryButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E40AFF82C54610D00E2DD78 /* DogCategoryButtonModel.swift */; };
 		0E40AFFE2C5465B200E2DD78 /* DogCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E40AFFD2C5465B200E2DD78 /* DogCategoryView.swift */; };
 		0E40B0042C54DEEA00E2DD78 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 0E40B0032C54DEEA00E2DD78 /* Kingfisher */; };
+		0E67F08C2C673A3D0098B913 /* SUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E67F08B2C673A3D0098B913 /* SUILabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		0E40AFF62C54607E00E2DD78 /* DogCategoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCategoryButton.swift; sourceTree = "<group>"; };
 		0E40AFF82C54610D00E2DD78 /* DogCategoryButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCategoryButtonModel.swift; sourceTree = "<group>"; };
 		0E40AFFD2C5465B200E2DD78 /* DogCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCategoryView.swift; sourceTree = "<group>"; };
+		0E67F08B2C673A3D0098B913 /* SUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUILabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				0E40AFED2C51A80100E2DD78 /* FixedSpacer.swift */,
+				0E67F08B2C673A3D0098B913 /* SUILabel.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 				0E40AFF92C54610D00E2DD78 /* DogCategoryButtonModel.swift in Sources */,
 				0E40AFE62C51A08100E2DD78 /* View+extension.swift in Sources */,
 				0E40AFEF2C51A80100E2DD78 /* FixedSpacer.swift in Sources */,
+				0E67F08C2C673A3D0098B913 /* SUILabel.swift in Sources */,
 				0E40AFE42C51A08100E2DD78 /* Color+extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
